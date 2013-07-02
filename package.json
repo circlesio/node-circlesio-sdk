@@ -1,0 +1,31 @@
+{
+  "name": "circlesio",
+  "version": "0.1.0",
+  "description": "Circles.io Node sdk",
+  "keywords": [
+    "sdk",
+    "circlesio",
+    "circles"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/circlesio/node-circlesio-sdk.git"
+  },
+  "author": {
+    "name": "Antonio 'pelle' Pellegrino",
+    "email": "pelle@circles.io",
+    "url": "http://circles.io"
+  },
+  "dependencies": {
+    "underscore": "*"
+  },
+  "main": "index",
+  "engines": {
+    "node": ">= 0.5.0"
+  },
+  "scripts": {
+    "test": "make"
+  },
+  "readmeFilename": "Readme.md",
+  "readme": "# Circles.io SDK"
+}
