@@ -17,7 +17,7 @@
     "url": "http://circles.io"
   },
   "dependencies": {
-    "underscore": "*"
+    "underscore": "1.4.4"
   },
   "main": "index",
   "engines": {
