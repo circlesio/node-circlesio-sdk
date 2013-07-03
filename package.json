@@ -1,6 +1,6 @@
 {
   "name": "circlesio-sdk",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Circles.io Node sdk",
   "keywords": [
     "sdk",
