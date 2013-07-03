@@ -10,6 +10,16 @@ fs.readFile(__dirname+'/data.json',function(err,data){
 		})
 })
 
-	// circles.delete('item',{"group": "reasources"},function(err,result){
-	// 	console.log(err,result)
-	// })
+// circles.delete('item',{id:""},function(err,result){
+// 	console.log(err,JSON.parse(result))
+// })
+
+
+// circles.read('item',{},function(err,result){
+// 	console.log(err,JSON.parse(result))
+// })
+
+
+// circles.udpate('item',{id:""},{group:"hello"},function(err,result){
+//  console.log(err,JSON.parse(result))
+// })
