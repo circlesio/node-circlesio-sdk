@@ -14,10 +14,10 @@ var  Circles = require('./lib')
 ```
 
 #### then you can do 
-* read
-* create
-* update
-* delete
+* Create
+* Read
+* Update
+* D192.168.1.202:8090elete
 
 Just specify the collection your calling then the data your passing
 
@@ -308,7 +308,7 @@ Schemas
 
 ##Role
 * Use to define rights, such as create, delete, update, read, add, remove, edit, destroy, master etc. 
-* CRUD (Create ead Update Delete): for the current item.
+* CRUD (Create Read Update Delete): for the current item.
 * The defined role permission set is applied to different Objects such as [Levels](#level), [Loaders](#loader), [Items](#item)
 
 
