@@ -97,7 +97,7 @@ where 1 is the index
 #### Query is the search lookup using normal mongodb queries (object):
 [Mongo Basic Queries](http://docs.mongodb.org/manual/core/read)
 [Mongo Adv Queries](http://docs.mongodb.org/manual/reference/operator/)
-just {} will return all and with the addtion of just 
+just {} will return all and with the addition of just 
 ```javascript
 { _id : ''}
 ```
@@ -151,7 +151,7 @@ Schemas
 ##Client
 
 * Session based storage and identification, used for user login, credentials, and other pertaining parameters
-* Session based entails anonymous and profile attached logins. Unlike [Instances](#instance) they are long life span: 30 days (subject to change)
+* Session based entails anonymous and profile attached logins. Unlike [Instances](#instance) they have a long life span: 30 days (subject to change)
 
 * Output
 
@@ -179,7 +179,7 @@ Schemas
 ```
 * ver is for verification of a user via email: boolean
 * a is the session token: auto generated string
-* login is the array of oAuth credentials and there tokens for later access: can be multiple, ex Facebook, twitter, Linkedin etc. 
+* login is the array of oAuth credentials and there tokens for later access: can be multiple, e.g., Facebook, twitter, Linkedin, etc. 
 * Save custom terms, etc, in the states Object
 
 ```json
@@ -308,7 +308,7 @@ Schemas
 
 ##Role
 * Use to define rights, such as create, delete, update, read, add, remove, edit, destroy, master etc. 
-* CRUD (create read update delete): for the current item.
+* CRUD (Create ead Update Delete): for the current item.
 * The defined role permission set is applied to different Objects such as [Levels](#level), [Loaders](#loader), [Items](#item)
 
 
