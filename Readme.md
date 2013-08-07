@@ -55,17 +55,17 @@ circles.delete(collection,query,options,function(err,result){
 ---
 
 #### The collection is the data collection name (string) :
-* item
-* instance
-* client
-* profile
-* grid
-* blob
-* loader
-* level
-* role
-* event
-* report
+* [item](#item)
+* [instance](#instance)
+* [client](#client)
+* [profile](#profile)
+* [grid](#grid)
+* [blob](#blob)
+* [loader](#loader)
+* [level](#level)
+* [role](#role)
+* [event](#event)
+* [report](#report)
 
 
 #### Model is the data that will become the data object (object):
@@ -530,6 +530,99 @@ Schemas
 ##Item
 ```json
 
+	"item": {
+		"states": {
+			"type": "Schema.Types.Mixed",
+			"hidden": true
+		},
+		"path": {
+			"type": "String",
+			"lowercase": true,
+			"trim": true
+		},
+		"title": {
+			"type": "String",
+			"default": ""
+		},
+		"photo": {
+			"type": "String"
+		},
+		"body": {
+			"type": "Schema.Types.Mixed"
+		},
+		"group": {
+			"type": "String",
+			"default": "",
+			"lowercase": true,
+			"trim": true
+		},
+		"x": {
+			"type": "Number"
+		},
+		"y": {
+			"type": "Number"
+		},
+		"z": {
+			"type": "Number"
+		},
+		"width": {
+			"type": "Number"
+		},
+		"height": {
+			"type": "Number"
+		},
+		"color": {
+			"type": "String"
+		},
+		"role":{
+			"type": "Schema.Types.ObjectId",
+			"ref": "role"
+		},
+		"permisson": [
+			{
+				"id": {
+					"type": "Schema.Types.ObjectId",
+					"ref": "profile"
+				},
+				"role": {
+					"type": "Schema.Types.ObjectId",
+					"ref": "role"
+				}
+			}
+		],
+		"item": {
+			"type": "Schema.Types.ObjectId",
+			"ref": "item"
+		},
+		"lock": {
+			"type": "Schema.Types.Mixed"
+		},
+		"date": {
+			"type": "Date"
+		},
+		"geo": { 
+			"type": "[Number]", 
+			"index": "2dsphere",
+			 "sparse": true 
+		},
+		"box":{
+			"type": "[Number]", 
+			"index": "2d",
+			 "sparse": true 
+		},
+		"due": {
+			"date": {
+				"type": "Date"
+			},
+			"period": {
+				"type": "Number"
+			},
+			"freq": {
+				"type": "Number"
+			}
+		},
+		"tags":{"type":"[String]"}
+	}
 ```
 
 
