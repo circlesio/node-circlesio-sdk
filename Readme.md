@@ -17,7 +17,7 @@ var  Circles = require('./lib')
 * Create
 * Read
 * Update
-* D192.168.1.202:8090elete
+* Delete
 
 Just specify the collection your calling then the data your passing
 
@@ -388,7 +388,7 @@ Schemas
 	}
 ```
 
-* Example role: private, default role, by not definding a permission, the default rights are 0, none. 
+* Example role: private, default role, by not defining a permission, the default rights are 0, none. 
 
 ```json	
 	{
